@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="start_button_top">45dp</dimen>
+    <dimen name="start_text_top">25dp</dimen>
+    <dimen name="start_text_top_small">10dp</dimen>
+    <dimen name="skip_margin">45dp</dimen>
+    <dimen name="wordText_margin">35dp</dimen>
+    <dimen name="progress_margin">55dp</dimen>
+    <dimen name="card_margin_bottom">65dp</dimen>
+    <dimen name="margin_start_card">35dp</dimen>
+    <dimen name="margin_bottom_card">45dp</dimen>
+    <dimen name="margin_bottom_card_to_card">20dp</dimen>
+    <dimen name="margin_progress">120dp</dimen>
+    <dimen name="margin_word">160dp</dimen>
+    <dimen name="margin_card1">250dp</dimen>
+    <dimen name="margin_card2">460dp</dimen>
+    <dimen name="padding_start">6dp</dimen>
+    <dimen name="padding_top">13dp</dimen>
+    <dimen name="start_cloud_top">25dp</dimen>
+    <dimen name="start_cloud_top1">250dp</dimen>
+
+
+
+    <!--TEXT SIZE-->
+    <dimen name="text_size_large">28sp</dimen>
+    <dimen name="text_size_medium">22sp</dimen>
+    <dimen name="text_size_low">18sp</dimen>
+    <dimen name="text_size_verylow">16sp</dimen>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".KelimeTestiFragment">
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomlogo"
+    android:src="@drawable/ic_decky_first_test_screen"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+</androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/start_now"
+        android:fontFamily="@font/avenir_heavy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomlogo"
+        android:background="@drawable/rounded_shape"
+        android:layout_marginBottom="@dimen/start_button_top"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/ic_rightarrow"
+        android:paddingRight="20dp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/word_info"
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:text="@string/test_information"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        android:layout_marginBottom="@dimen/start_text_top"
+        android:textSize="@dimen/text_size_low"
+        android:fontFamily="@font/avenir_medium">
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/word_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:text="@string/word_test"
+        android:textSize="@dimen/text_size_large"
+        android:fontFamily="@font/avenir_heavy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/word_info"
+        android:layout_marginBottom="@dimen/start_text_top_small">
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:textSize="@dimen/text_size_medium"
+        android:fontFamily="@font/avenir_heavy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/skip_margin"
+        android:layout_marginTop="@dimen/skip_margin"
+        >
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

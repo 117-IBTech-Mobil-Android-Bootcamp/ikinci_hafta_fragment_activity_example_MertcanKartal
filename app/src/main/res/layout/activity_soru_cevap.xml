@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_file1"
+    tools:context=".SoruCevapActivity">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardThird"
+        android:layout_width="145dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_start_card"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardElevation="6dp"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_card2"
+        card_view:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cardThirdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/avenir_heavy"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_low" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardFourth"
+        android:layout_width="145dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/margin_start_card"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardElevation="6dp"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_card2"
+        card_view:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/cardFourthTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/avenir_heavy"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_low" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardSecond"
+        android:layout_width="145dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/margin_start_card"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardElevation="6dp"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_card1"
+        card_view:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/cardSecondTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/avenir_heavy"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_low" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardFirst"
+        android:layout_width="145dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_start_card"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardElevation="6dp"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_card1"
+        card_view:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cardFirstTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_border"
+            android:fontFamily="@font/avenir_heavy"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_low" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainWord"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin_word"
+        android:background="@drawable/rounded_corner"
+        android:elevation="4dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:padding="12dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="375dp"
+        android:layout_height="5dp"
+        android:background="@drawable/progress_bar"
+        android:max="10"
+        android:progress="3"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_marginTop="@dimen/margin_progress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/progressBar_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="3/10"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/close_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_close"
+            android:fontFamily="@font/avenir_heavy"
+            android:textSize="@dimen/text_size_large" />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circle_progress_bar"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </ProgressBar>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/progressText"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:paddingTop="@dimen/padding_top"
+        android:paddingStart="@dimen/padding_start"
+        android:background="@drawable/rounded_text"
+        android:text="1 sn"
+        android:textSize="@dimen/text_size_verylow"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar1"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar1"
+        app:layout_constraintStart_toStartOf="@+id/progressBar1"
+        app:layout_constraintTop_toTopOf="@+id/progressBar1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cloud2"
+        android:layout_width="37dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_cloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        android:layout_marginTop="@dimen/start_cloud_top"
+        android:layout_marginStart="@dimen/start_cloud_top"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cloud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/start_cloud_top1"
+        android:layout_marginTop="@dimen/start_button_top"
+        android:src="@drawable/ic_cloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
