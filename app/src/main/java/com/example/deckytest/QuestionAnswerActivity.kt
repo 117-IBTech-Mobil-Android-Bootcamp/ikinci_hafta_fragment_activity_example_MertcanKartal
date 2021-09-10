@@ -3,16 +3,16 @@ package com.example.deckytest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import kotlinx.android.synthetic.main.activity_soru_cevap.*
+import kotlinx.android.synthetic.main.activity_question_answer.*
 
-class SoruCevapActivity : AppCompatActivity() {
+class QuestionAnswerActivity : AppCompatActivity() {
 
     var progressStatus = 0
     var handler = Handler()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_soru_cevap)
+        setContentView(R.layout.activity_question_answer)
 
         //taking datas with intent
         val intent = intent

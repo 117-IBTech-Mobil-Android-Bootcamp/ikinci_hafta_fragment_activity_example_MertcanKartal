@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_kelime_testi.*
+import kotlinx.android.synthetic.main.fragment_word_test.*
 
-class KelimeTestiFragment : Fragment() {
+class WordTestFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class KelimeTestiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kelime_testi, container, false)
+        return inflater.inflate(R.layout.fragment_word_test, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,7 +35,7 @@ class KelimeTestiFragment : Fragment() {
             answers.add("Ensülin")
 
         //sending datas with intent
-            val intent = Intent(context,SoruCevapActivity::class.java)
+            val intent = Intent(context,QuestionAnswerActivity::class.java)
             intent.putStringArrayListExtra("answers",answers)
             intent.putExtra("word",word)
             startActivity(intent)

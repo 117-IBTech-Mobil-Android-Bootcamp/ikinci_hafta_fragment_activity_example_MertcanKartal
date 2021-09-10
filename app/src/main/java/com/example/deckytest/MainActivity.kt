@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         //add fragment with extension func
         supportFragmentManager.inTransaction {
-            replace(R.id.fragmentContainer, KelimeTestiFragment())
+            replace(R.id.fragmentContainer, WordTestFragment())
         }
     }
 }

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeckyTest">
         <activity
-            android:name=".SoruCevapActivity"
+            android:name=".QuestionAnswerActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
